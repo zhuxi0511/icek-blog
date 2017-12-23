@@ -1,0 +1,33 @@
+/*
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+*/
+
+@font-face {
+    /* font-properties */
+    font-family: pictos;
+    src:url('/pictos-web.woff'),
+    url('pictos/pictos-web.ttf'),
+    url('pictos/pictos-web.eot'); /* IE9 */
+}
+
+.main-body {
+    font-size: 16px;
+    font-family:  'pt-serif', /*'Times New Roman', Times, */ 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
+}
+
+a:visited {
+    color: rgb(220, 0, 0);
+    text-decoration: none;
+}
+
+a {
+    color: rgb(220, 0, 0);
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: bold;
+}
+

@@ -1,0 +1,23 @@
+{% extends "main/base.html" %}
+{% load staticfiles %}          
+{% load i18n %}               
+
+{% block content %}
+<div class='mtb-15'>
+    <div class='container'>
+        <div class='row' >
+            <h2>{{ article.title }}</h2>
+        </div>
+        <div class='row' >
+            <p class='mt-15'> 
+            <i><b> {{ date }} </b></i>
+            </p>
+        </div>
+        <div class='row' >
+            <div class='markdownx'>
+                {{ content|safe }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
