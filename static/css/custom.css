@@ -12,9 +12,34 @@
     url('pictos/pictos-web.eot'); /* IE9 */
 }
 
+body {
+    background: #eee;
+}
+
+header {
+    font-size: 18px;
+}
+
 .main-body {
     font-size: 16px;
     font-family:  'pt-serif', /*'Times New Roman', Times, */ 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
+    max-width: 52em;
+    background-color: #fff;
+    padding: 0.3vw 3.5vw 0.5vw 3.5vw;
+}
+
+.main-title p {
+    margin-bottom:0px;
+}
+
+.article-title {
+    display: block;
+    width:100%;
+}
+
+.article-title p{
+    margin-bottom: 6px;
+    font-size: 18px;
 }
 
 a:visited {
@@ -29,5 +54,10 @@ a {
 
 h2 {
     font-weight: bold;
+}
+
+hr {
+    border-top-color: rgba(0, 0, 0, 0.3);
+    width:100%;
 }
 

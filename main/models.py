@@ -14,3 +14,9 @@ class Article(models.Model):
     
     def __str__(self):
         return self.title
+
+class AboutContent(models.Model):
+    content = MarkdownxField()
+
+    def __str__(self):
+        return "about content"

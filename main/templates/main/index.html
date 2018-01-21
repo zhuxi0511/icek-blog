@@ -3,5 +3,20 @@
 {% load i18n %}               
 
 {% block content %}
-1
+<div class='mtb-15'>
+    <div class='container'>
+        <div class='row main-title' >
+            <p><b>文章</b></p>
+            <hr>
+        </div>
+        <div class='row'>
+            {% for article in articles %}
+            <div class='article-title'>
+                <p><span>{{ article.date|date:"Y-m-d" }} <span>
+                        <a href="blog/{{ article.id }}">{{ article.title }}</a></p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}

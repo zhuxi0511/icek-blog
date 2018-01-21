@@ -20,7 +20,9 @@ from main import views as main_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_views.index, name='index'),
-    path('blog/<slug:title>', main_views.article, name='article'),
+    path('draft', main_views.draft, name='draft'),
+    #path('blog/<slug:title>', main_views.article, name='article'),
+    path('blog/<int:article_id>', main_views.article_id, name='article_id'),
     path('about/', main_views.about, name='about'),
     path('markdownx/', include('markdownx.urls')),
 ]
