@@ -1,7 +1,6 @@
 import markdown
 
 from django.shortcuts import render
-from django.template import RequestContext, loader
 from .models import Article, AboutContent
 
 # Create your views here.

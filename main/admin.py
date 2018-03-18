@@ -7,3 +7,4 @@ from main.models import Article, AboutContent
 
 admin.site.register(Article, MarkdownxModelAdmin)
 admin.site.register(AboutContent, MarkdownxModelAdmin)
+

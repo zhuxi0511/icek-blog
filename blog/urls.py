@@ -19,6 +19,7 @@ from main import views as main_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('taobao_compare/', include('taobao_compare.urls')),
     path('', main_views.index, name='index'),
     path('draft', main_views.draft, name='draft'),
     #path('blog/<slug:title>', main_views.article, name='article'),
