@@ -48,6 +48,7 @@ def article_id(request, article_id):
             })
 
 
+#TODO add error page
 def about(request):
     try:
         about_content = AboutContent.objects.get(id=1)

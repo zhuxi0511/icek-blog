@@ -1,4 +1,8 @@
 *.pyc
 *.o
 *.swp
-blog/settings.py
+db.sqlite3
+main/migrations/
+run/log/
+run/static_files/
+static/image/
