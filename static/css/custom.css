@@ -21,10 +21,13 @@ header {
 }
 
 .main-body {
-    font-size: 16px;
-    font-family:  'pt-serif', /*'Times New Roman', Times, */ 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
+    font-size: 18px;
+    font-family: /*source-han-serif-sc, noto-serif,*/ pt-serif, serif;
+    font-weight: 400;
+    font-style: normal;
     max-width: 52em;
     background-color: #fff;
+    color: #000000;
     padding: 0.3vw 3.5vw 0.5vw 3.5vw;
 }
 
