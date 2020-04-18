@@ -25,4 +25,5 @@ urlpatterns = [
     path('blog/<int:article_id>', main_views.article_id, name='article_id'),
     path('about/', main_views.about, name='about'),
     path('markdownx/', include('markdownx.urls')),
+    path('tracking/', include('tracking.urls')),
 ]

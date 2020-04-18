@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     'main',
     'markdownx',
+    'tracking',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'tracking.middleware.VisitorTrackingMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -128,4 +130,4 @@ STATICFILES_DIRS = [
         os.path.join(BASE_DIR, "static"),
         ]
 
-STATIC_ROOT = '/home/zhuxi/blog/run/static_files/'
+STATIC_ROOT = '/app/run/static_files/'

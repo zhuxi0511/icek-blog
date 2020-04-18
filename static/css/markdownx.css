@@ -55,6 +55,11 @@
 .markdownx h6 {
   font-weight: 700
 }
+.markdownx h1,
+.markdownx h2,
+.markdownx h3 {
+  font-weight: 600
+}
 .markdownx h1 {
   font-size: 2.5em
 }
@@ -92,7 +97,10 @@
 .markdownx kbd,
 .markdownx pre,
 .markdownx samp {
-  font-family: monospace,monospace;
+  font-family: source-code-pro,monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
 }
 .markdownx code,
 .markdownx pre {
