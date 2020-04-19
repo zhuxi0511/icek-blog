@@ -23,7 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@*1-$bajrjjukz&r!ykq1he!(gxbse-fx7fg48pkg+2kka297m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
         "www.dudurun.com",
@@ -131,3 +132,5 @@ STATICFILES_DIRS = [
         ]
 
 STATIC_ROOT = '/app/run/static_files/'
+
+TRACK_PAGEVIEWS = True
