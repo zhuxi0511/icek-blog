@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from datetime import datetime
 
 from blog.security_settings import *
 
@@ -137,6 +138,7 @@ STATICFILES_STORAGE = "django_oss_storage.backends.OssStaticStorage"
 
 # ============== aliyun oss settings =====================
 
+MARKDOWNX_MEDIA_PATH = datetime.now().strftime('markdownx/%Y/%m/%d')
 
 TRACK_PAGEVIEWS = True
 
