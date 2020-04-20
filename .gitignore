@@ -6,3 +6,4 @@ main/migrations/
 run/log/
 run/static_files/
 static/image/
+*security_settings.py
