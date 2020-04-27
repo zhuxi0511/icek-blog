@@ -64,7 +64,7 @@
                     <div class='container'>
                         <div class='row'>
                             <div class='site-info'>
-                            <p>Site powered by <a href="http://www.djangoproject.com/">Django</a>.<p>
+                            <p>Site powered by <a href="http://www.djangoproject.com/" target="_blank">Django</a>.<p>
                             </div>
                         </div>
                     </div>
@@ -74,5 +74,16 @@
         </div>
         <!-- main body container end -->
     </body>
+    <script>
+        (function(d) {
+            content = d.getElementsByClassName("markdownx");
+            if (content.length == 1) {
+                as = content[0].getElementsByTagName('a');
+                for (i=0;i < as.length;i+=1) {
+                    as[i].setAttribute('target','_blank');
+                }
+            }
+        })(document);
+    </script>
 </html>
 
