@@ -23,6 +23,7 @@ urlpatterns = [
     path('draft', main_views.draft, name='draft'),
     #path('blog/<slug:title>', main_views.article, name='article'),
     path('blog/<int:article_id>', main_views.article_id, name='article_id'),
+    path('tag/<int:tag_id>', main_views.tag_index, name='tag_index'),
     path('about/', main_views.about, name='about'),
     path('markdownx/', include('markdownx.urls')),
     path('tracking/', include('tracking.urls')),

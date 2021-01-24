@@ -11,6 +11,12 @@
         <div class='row' >
             <p class='mt-15'> 
             <i><b> {{ date }} </b></i>
+            {% if tags|length > 0 %}
+             | Tags:
+            {% for tag in tags %}
+            <a href="/tag/{{ tag.id }}"> {{ tag.tagname }}</a>
+            {% endfor %}
+            {% endif %}
             </p>
         </div>
         <div class='row' >
